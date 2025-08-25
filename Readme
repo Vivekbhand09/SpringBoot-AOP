@@ -28,16 +28,17 @@ AOP stands for **Aspect-Oriented Programming**, which is used to separate **cros
 
 ---
 
-## 🛠 **Core AOP Concepts**
+## 🛠 Core AOP Concepts
 
-| Concept       | Description |
-|--------------|-------------|
-| **Aspect**   | A module that encapsulates a cross-cutting concern like logging or security. |
-| **Advice**   | The action taken by an Aspect at a particular join point (e.g., before, after, around). |
-| **Join Point** | A point in the execution of the program (method call, constructor execution). |
-| **Pointcut** | An expression that matches join points. |
-| **Weaving**  | The process of linking Aspects with application code at runtime or compile time. |
-| **Proxy**    | A class created by Spring AOP to wrap the target object and apply aspects. |
+| **Concept**    | **Description** |
+|-----------------|------------------|
+| **Aspect**      | A module that encapsulates a cross-cutting concern like logging or security. |
+| **Advice**      | The action taken by an Aspect at a particular join point (e.g., before, after, around). |
+| **Join Point**  | A point in the execution of the program (method call, constructor execution). |
+| **Pointcut**    | An expression that matches join points. |
+| **Weaving**     | The process of linking Aspects with application code at runtime or compile time. |
+| **Proxy**       | A class created by Spring AOP to wrap the target object and apply aspects. |
+
 
 ---
 
