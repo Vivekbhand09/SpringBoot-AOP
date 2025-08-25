@@ -29,6 +29,7 @@ AOP stands for **Aspect-Oriented Programming**, which is used to separate **cros
 ---
 
 ## 🛠 **Core AOP Concepts**
+
 | Concept       | Description |
 |--------------|-------------|
 | **Aspect**   | A module that encapsulates a cross-cutting concern like logging or security. |
