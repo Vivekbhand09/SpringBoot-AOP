@@ -1,0 +1,55 @@
+# 📘 Spring AOP (Aspect Oriented Programming) – Backend Learning  
+
+I learned this topic as part of **Backend Development in Spring Framework**, focusing on **AOP (Aspect Oriented Programming)** and how it helps to separate **cross-cutting concerns** like **logging, security, and transaction management**.
+
+---
+
+## ✅ **Overview**
+This project demonstrates **Spring AOP using CGLIB dynamic proxies**.  
+It uses:
+- **Enhancer** (from CGLIB) for proxy creation  
+- **MethodInterceptor** for method interception  
+- **Original Class** for business logic  
+
+---
+
+## 🔍 **What is AOP?**
+AOP stands for **Aspect-Oriented Programming**, which is used to separate **cross-cutting concerns** from the main business logic.
+
+### 💡 **Why use AOP?**
+- To avoid **code duplication**
+- To achieve **clean and maintainable code**
+- To apply common functionalities like:
+  - ✅ Logging
+  - ✅ Security
+  - ✅ Transaction Management
+  - ✅ Caching
+  - ✅ Performance Monitoring
+
+---
+
+## 🛠 **Core AOP Concepts**
+| Concept       | Description |
+|--------------|-------------|
+| **Aspect**   | A module that encapsulates a cross-cutting concern like logging or security. |
+| **Advice**   | The action taken by an Aspect at a particular join point (e.g., before, after, around). |
+| **Join Point** | A point in the execution of the program (method call, constructor execution). |
+| **Pointcut** | An expression that matches join points. |
+| **Weaving**  | The process of linking Aspects with application code at runtime or compile time. |
+| **Proxy**    | A class created by Spring AOP to wrap the target object and apply aspects. |
+
+---
+
+## ⚡ **Types of Advice**
+- **Before Advice** – Runs **before** the method execution
+- **After Advice** – Runs **after** the method execution (regardless of outcome)
+- **After Returning Advice** – Runs **after method returns successfully**
+- **After Throwing Advice** – Runs **after method throws an exception**
+- **Around Advice** – Runs **before and after** method execution
+
+---
+
+## 🔑 **Proxy in Spring AOP**
+Spring AOP uses **Proxies** to apply aspects:
+- **JDK Dynamic Proxy** – For interfaces
+- **CGLIB Proxy** – For classes without interfaces (like in this example)
